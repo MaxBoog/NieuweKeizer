@@ -1,0 +1,191 @@
+/*  
+	///////////////////////////////
+	//							 //
+	//			BUTTONS			 //
+	//							 //
+	///////////////////////////////
+*/
+
+// main button properties
+
+.btn 
+{
+	border: none;
+	font-size: $font-m;
+
+	&:link 
+	{
+		border: none;
+	}
+
+	&:visited 
+	{
+		border: none;
+	}
+
+	&:hover 
+	{		
+		border: none;
+	}
+	&:active 
+	{
+		border: none;
+	}
+}
+
+// primary call to action button
+.btn-CTA-1 {
+	background-color: $red;
+	border: 0;
+	border-radius: 8px;
+	box-shadow: none;
+	color: $white;
+	cursor: pointer;
+	display: inline-block;
+	font-size: $font-s;
+	font-weight: 300;
+	min-width: 18rem !important;
+	margin: 2rem 0.5rem;
+	padding: 2rem 3rem;
+
+	&:hover 
+	{
+		background-color: $orange;
+		color: white;
+	}
+
+	&:active 
+	{
+		background-color: $red !important;
+		border-color: $red !important;
+		box-shadow: none !important;
+		color: white !important;
+		outline: none !important;
+	}
+
+	&:focus 
+	{
+		background-color: $red !important;
+		border-color: $red !important;
+		box-shadow: none !important;
+		color: white !important;
+	}
+}
+
+// secondary call to action button
+
+.btn-CTA-2
+{
+	@extend .btn-CTA-1;
+
+	background-color: $white !important;
+	border: 1px solid $grey !important;
+	color: $black;
+	
+	&:hover
+	{
+		background-color: $light-grey !important;
+		color: $black !important;
+	}
+
+	&:active 
+	{
+		background-color: $white !important;
+		border-color: $light-grey !important;
+		box-shadow: none !important;
+		color: $black !important;
+		outline: none !important;
+	}
+
+	&:focus 
+	{
+		background-color: $white !important;
+		border-color: $light-grey !important;
+		box-shadow: none !important;
+		color: $black !important;
+	}
+}
+
+// form send button
+
+.btn-send {
+	@extend .btn-CTA-1;
+}
+
+// scroll to top arrow
+
+.scrollToTop {
+	border: none;
+	border-radius: 5px;
+	bottom: 3rem;
+	color: $red;
+	cursor: pointer;
+	display: none;
+	outline: none;
+	padding: 1rem;
+	position: fixed;
+	right: 3rem;
+	z-index: 99;
+
+	&:hover
+	{
+		color: $red;
+	}
+}
+
+// loading spinners
+
+.spinner-1:before {
+	content: "";
+	animation: spinner 0.7s ease infinite;
+	border-radius: 50%;
+	border: 3px solid $grey;
+	border-top-color: $red;
+	box-sizing: border-box;
+	height: 6rem;
+	left: 50%;
+	margin-left: -3rem;
+	margin-top: -3rem;
+	position: absolute;
+	top: 50%;
+	width: 6rem;
+}
+
+.spinner-2:before {
+	content: "";
+	animation: spinner 0.7s linear infinite;
+	border-radius: 50%;
+	border: 3px solid transparent;
+	border-top-color: $red;
+	border-bottom-color: $red;
+	box-sizing: border-box;
+	height: 6rem;
+	left: 50%;
+	margin-top: -3rem;
+	margin-left: -3rem;
+	position: absolute;
+	top: 50%;
+	width: 6rem;
+}
+
+.spinner-3:before {
+	content: "";
+	animation: spinner 0.7s linear infinite;
+	border-radius: 50%;
+	border-top: 3px solid $red;
+	border-right: 3px solid transparent;
+	box-sizing: border-box;
+	height: 6rem;
+	left: 50%;
+	margin-top: -3rem;
+	margin-left: -3rem;
+	position: absolute;
+	top: 50%;
+	width: 6rem;
+}
+
+@keyframes spinner {
+	to {
+		transform: rotate(360deg);
+	}
+}

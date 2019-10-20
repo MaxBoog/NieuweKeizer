@@ -1,0 +1,62 @@
+/*  
+	///////////////////////
+	//					 //		     
+	//		FORMS		 //
+	//					 //
+	///////////////////////
+*/
+
+input[type="text"] {
+	border: none !important;
+	border-bottom: 2px solid $grey !important;
+	border-radius: 0 !important;
+	box-shadow: none !important;
+	color: $black;
+	font-size: $font-m !important;
+	outline: none;
+	padding: 1.5rem !important;
+	transition: 0.5s ease;
+	
+	&:focus 
+	{
+		border-bottom: 2px solid $red !important;
+		outline-color: transparent !important;
+	}
+}
+
+input[type="email"] 
+{
+	@extend input[type="text"];
+}
+
+input[type="tel"] 
+{
+	@extend input[type="text"];
+}
+
+input::placeholder 
+{
+	color: $black !important;
+}
+
+.form-group 
+{
+	margin: 2rem 0 !important;
+}
+
+.help-block 
+{
+	color: $red;
+}
+
+textarea 
+{
+	@extend input[type="text"];
+	border: 2px solid $grey !important;
+
+	&:focus 
+	{
+		border: 2px solid $red !important;
+	}
+}
+

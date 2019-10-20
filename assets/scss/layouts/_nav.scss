@@ -1,0 +1,147 @@
+/*  
+	///////////////////////////////////
+	//								 //	     
+	//			NAVIGATION			 //
+	//								 //	     
+	///////////////////////////////////
+*/
+
+// main navigation
+
+nav.shrink
+{
+	padding: 2rem 3rem !important;
+} 
+
+.navbar-custom 
+{
+	background-color: $white;
+	border-bottom: 2px solid $purple;
+	padding: 3rem !important;
+	transition: all 0.4s ease;
+
+	.navbar-brand 
+	{
+		color: $black;
+		font-family: $f-secondary;
+		font-size: $font-l;
+		transition: 0.2s;
+
+		&:hover 
+		{
+			color: $red;
+		}
+	}
+	
+	.nav-item.active .nav-link 
+	{
+		color: $black;
+	}
+	
+	.nav-item:hover .nav-link 
+	{
+		color: $red;
+	}
+
+	.navbar-nav
+	{
+		.nav-link
+		{
+			color: $black;
+			font-size: $font-m;
+			transition: 0.1s;
+		}
+	}
+
+	// hamburger animation
+
+	.navbar-toggler 
+	{
+		background: transparent !important;
+		border: none;
+
+		&:focus
+		{
+			background: transparent !important;
+			outline: none;
+		}
+
+		&:hover
+		{
+			>.icon-bar:nth-child(2)
+			{
+				transition: ease all 0.2s;
+				width: 22px;
+			}
+		}
+
+		&:active
+		{
+			>.icon-bar:nth-child(2)
+			{
+				transition: ease all 0.2s;
+				width: 22px;
+			}
+		}
+
+		&:not(.collapsed)
+		{
+			.icon-bar:nth-child(1)
+			{
+				transform: rotate(45deg) translate(5px, 4px);
+				transition: ease all 0.2s;
+			}
+
+			.icon-bar:nth-child(2)
+			{
+				opacity: 0;
+				transition: ease all 0.2s;
+			}
+
+			.icon-bar:nth-child(3)
+			{
+				transform: rotate(-45deg) translate(4px, -4px);
+				transition: ease all 0.2s;
+			}
+		}
+
+		.icon-bar
+		{
+			background-color: $black;
+			border-radius: 1px;
+			display: block;
+			height: 2px;
+			transform: rotate(0deg) translate(0px, 0px);
+			transition: ease all 0.2s;
+			width: 22px;
+
+			+.icon-bar 
+			{
+				margin-top: 4px;
+			}
+			&:nth-child(2) 
+			{
+				width: 22px;
+				transition: ease all 0.2s;
+			}
+		}
+	}
+}
+
+// tours navigation
+
+.navbar-tours
+{
+	font-size: $font-s;
+	
+	.nav-link
+	{
+		border-radius: 8px;
+		color: $black;
+		
+		&:hover
+		{
+			background-color: $light-grey;
+		}
+	}
+}

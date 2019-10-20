@@ -1,0 +1,305 @@
+/*  
+	///////////////////////////////////////////////
+	//									     	 //
+	//			RESPONSIVE BREAKPOINTS			 //
+	//									      	 //
+	///////////////////////////////////////////////
+*/
+
+
+// max width
+
+@media (max-width: 576px)
+{
+	// base
+
+	h1,h2,h3,h4,h5
+	{
+		line-height: 1;
+	}
+
+	// container styles
+
+	.container-fluid
+	{
+		width: 100%;
+	}
+
+	// footer
+
+	// header
+
+	// nav
+
+	.navbar-custom
+	{
+		.navbar-brand
+		{
+			font-size: $font-xs !important;
+		}
+		
+		.navbar-nav
+		{
+			.nav-link
+			{
+				font-size: $font-xs;
+			}
+		}
+	}
+
+	.navbar-tours
+	{
+		font-size: 1.2rem;
+	}
+
+	// buttons
+
+	// components
+
+	// forms
+
+	// images
+
+	// sections
+
+}
+
+@media (max-width: 768px) 
+{
+	// base
+
+	p
+	{
+		font-size: $font-xs;
+	}
+
+	li 
+	{
+		font-size: $font-xs;
+	}
+
+	// footer
+
+	// header
+
+	// nav
+
+	.navbar-custom
+	{
+		.navbar-brand
+		{
+			font-size: $font-s;
+		}
+	}
+
+	// buttons
+
+	// components
+
+	// forms
+
+	// images
+
+	// sections
+
+	.tours
+	{
+		p
+		{
+			border: 1px solid $light-grey;
+			border-radius: 5px;
+			padding: 1rem;
+		}
+	}
+}
+
+@media (max-width: 992px)
+{
+	// base
+
+	.cont 
+	{
+		max-width: 90vw;
+	}
+
+	hr 
+	{
+		margin: 5rem 0;
+	}
+
+	// footer
+
+	// header
+
+	// nav
+
+	// buttons
+
+	// components
+
+	.marketing-text 
+	{
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
+
+	.short-icon 
+	{
+		font-size: 7.5rem;
+	}
+
+	// forms
+
+	// images
+
+	// sections
+
+}
+
+@media (max-width: 1200px)
+{
+	// footer
+
+	// header
+
+	// nav
+
+	// buttons
+
+	.btn-CTA-1
+	{
+		font-size: 1.4rem;
+		margin-top: 1rem;
+		min-width: 13rem;
+		padding: 1.5rem;
+	}
+
+	// components
+
+	// forms
+
+	// images
+
+	// sections
+
+}
+
+
+
+// min width
+
+@media (min-width: 576px)
+{
+	// footer
+
+	// header
+
+	// nav
+
+	// buttons
+
+	// components
+
+	// forms
+
+	// images
+
+	// sections
+
+}
+
+@media (min-width: 768px)
+{
+	// footer
+
+	// header
+
+	// nav
+
+	// buttons
+
+	// components
+
+	// forms
+
+	// images
+
+	// sections
+
+}
+
+@media (min-width: 992px) 
+{
+
+	// base
+
+	.cont 
+	{
+		padding: 5rem;
+	}	
+	
+	// footer
+	
+	// header
+
+	.header-subtext 
+	{
+		font-size: 30px;
+		padding-bottom: 5rem;
+	}
+
+	.header-text 
+	{
+		font-size: 80px;
+		padding-top: 10rem;
+	}
+	
+	// nav
+
+	.navbar-custom 
+	{
+		padding: 3rem;
+	}
+
+
+	.nav-tours 
+	{
+		display: flex;
+		.nav-item {
+			margin: 0 1rem;
+		}
+	}
+
+	// buttons
+
+	// components
+
+	// forms
+
+	// images
+
+	// sections
+
+}
+
+@media (min-width: 1200px)
+{
+	// base
+
+	// footer
+
+	// header
+
+	// nav
+
+	// buttons
+
+	// components
+
+	// forms
+
+	// images
+
+	// sections
+}
+

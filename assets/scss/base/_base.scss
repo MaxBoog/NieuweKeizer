@@ -1,0 +1,92 @@
+/*  
+	//////////////////////////////////////
+	//									//
+	//			BASE ELEMENTS			//
+	//									//
+	//////////////////////////////////////
+*/
+
+// main
+
+html
+{
+	font-size: 65.5%;
+}
+
+body 
+{
+	background-image: linear-gradient(to bottom left, $blue, $dark-purple);
+	color: $black;
+	font-family: $f-primary !important;
+	font-weight: 300 !important;
+	letter-spacing: 1px;
+	line-height: 1.5;
+	padding-top: 10rem;
+	position: relative;
+}
+
+// base
+
+a 
+{
+	text-decoration: none;
+	color: $blue;
+	&:hover {
+		text-decoration: none;
+		color: $red;
+	}
+}
+
+h1,h2,h3,h4,h5
+{
+	line-height: 1.5;
+}
+
+hr 
+{
+	border: 1px solid $light-grey;
+	border-radius: 90px;
+	margin: 7rem 0;
+}
+
+.hr-2
+{
+	background-image: linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
+	border-color: transparent;
+	border-radius: 2px;
+	height: 2px;
+	margin: 2rem 0;
+	
+}
+
+li
+{
+	font-size: $font-s;
+}
+
+p 
+{
+	color: $dark-grey;
+	font-size: $font-m;
+}
+
+strong
+{
+	color: black !important;
+	font-weight: 900 !important;
+}
+
+
+
+// container styles
+
+.container-fluid {
+	width: 80%;
+}
+
+.cont {
+	background-color: white;
+	border-radius: 0.75rem;
+	padding: 2rem;
+	margin-bottom: 1rem;
+}

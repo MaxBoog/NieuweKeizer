@@ -1,0 +1,65 @@
+/*  
+	//////////////////////////
+	//					    //		     
+	//		 SECTIONS	    //
+	//					    //
+	//////////////////////////
+*/
+
+.featurette 
+{
+    h2 
+    {
+        font-size: $font-xl;
+        padding-bottom: 1rem;
+    }
+}
+
+.marketing 
+{
+    .marketing-element 
+    {
+        text-align: center;
+        
+        h2 
+        { 
+            font-size: $font-l;
+        }
+
+        p 
+        {
+            font-size: $font-m !important;
+			margin-right: 0.75rem;
+			margin-left: 0.75rem;
+		}
+	}
+	
+    
+}
+
+.tours
+{
+    h1
+    {
+        padding-top: 5rem;
+    }
+
+    hr
+    {
+        margin: 5rem 0 0 0;
+    }
+
+    .hr-2
+    {
+        max-width: 10rem;
+        margin: 3rem 0;
+    }
+
+    strong
+    {
+        font-weight: 900 !important;
+        color: black;
+    }
+}
+
+
