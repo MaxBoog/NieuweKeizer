@@ -11,6 +11,8 @@
 html
 {
 	font-size: 65.5%;
+	height: 100%;
+	margin: 0 !important;
 }
 
 body 
@@ -19,10 +21,11 @@ body
 	color: $black;
 	font-family: $f-primary !important;
 	font-weight: 300 !important;
+	height: 100%;
 	letter-spacing: 1px;
 	line-height: 1.5;
-	padding-top: 10rem;
-	position: relative;
+	margin: 0 !important;
+	// position: relative;
 }
 
 // base

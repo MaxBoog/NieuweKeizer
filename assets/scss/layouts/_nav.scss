@@ -10,20 +10,20 @@
 
 nav.shrink
 {
-	padding: 2rem 3rem !important;
-} 
+	padding: 1.5rem 2.5rem !important;
+	background-color: $white;
+}
 
 .navbar-custom 
 {
-	background-color: $white;
-	border-bottom: 2px solid $purple;
-	padding: 3rem !important;
+	background-color: transparent;
+	padding: 2.5rem !important;
 	transition: all 0.4s ease;
 
 	.navbar-brand 
 	{
-		color: $black;
-		font-family: $f-secondary;
+		color: $white;
+		font-family: $f-primary;
 		font-size: $font-l;
 		transition: 0.2s;
 
@@ -107,7 +107,7 @@ nav.shrink
 
 		.icon-bar
 		{
-			background-color: $black;
+			background-color: $white;
 			border-radius: 1px;
 			display: block;
 			height: 2px;
@@ -124,24 +124,6 @@ nav.shrink
 				width: 22px;
 				transition: ease all 0.2s;
 			}
-		}
-	}
-}
-
-// tours navigation
-
-.navbar-tours
-{
-	font-size: $font-s;
-	
-	.nav-link
-	{
-		border-radius: 8px;
-		color: $black;
-		
-		&:hover
-		{
-			background-color: $light-grey;
 		}
 	}
 }

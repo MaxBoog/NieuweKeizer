@@ -18,16 +18,18 @@
 	//////////////////////////////////////
 */
 html {
-  font-size: 65.5%; }
+  font-size: 65.5%;
+  height: 100%;
+  margin: 0 !important; }
 
 body {
   color: #444444;
   font-family: "Lato", sans-serif !important;
   font-weight: 300 !important;
+  height: 100%;
   letter-spacing: 1px;
   line-height: 1.5;
-  padding-top: 10rem;
-  position: relative; }
+  margin: 0 !important; }
 
 a {
   text-decoration: none;
@@ -329,18 +331,18 @@ textarea {
 	///////////////////////////////////
 */
 nav.shrink {
-  padding: 2rem 3rem !important; }
+  padding: 1.5rem 2.5rem !important;
+  background-color: #ffffff; }
 
 .navbar-custom {
-  background-color: #ffffff;
-  border-bottom: 2px solid #6c5e81;
-  padding: 3rem !important;
+  background-color: transparent;
+  padding: 2.5rem !important;
   -webkit-transition: all 0.4s ease;
   -o-transition: all 0.4s ease;
   transition: all 0.4s ease; }
   .navbar-custom .navbar-brand {
-    color: #444444;
-    font-family: "Open Sans", sans-serif;
+    color: #ffffff;
+    font-family: "Lato", sans-serif;
     font-size: 2.6rem;
     -webkit-transition: 0.2s;
     -o-transition: 0.2s;
@@ -393,7 +395,7 @@ nav.shrink {
       -o-transition: ease all 0.2s;
       transition: ease all 0.2s; }
     .navbar-custom .navbar-toggler .icon-bar {
-      background-color: #444444;
+      background-color: #ffffff;
       border-radius: 1px;
       display: block;
       height: 2px;
@@ -412,14 +414,6 @@ nav.shrink {
         -o-transition: ease all 0.2s;
         transition: ease all 0.2s; }
 
-.navbar-tours {
-  font-size: 1.8rem; }
-  .navbar-tours .nav-link {
-    border-radius: 8px;
-    color: #444444; }
-    .navbar-tours .nav-link:hover {
-      background-color: #ececec; }
-
 /*  
 	///////////////////////
 	//					 //		     
@@ -427,18 +421,29 @@ nav.shrink {
 	//					 //
 	///////////////////////
 */
-.header-subtext {
-  padding-bottom: 4rem;
-  color: #ffffff;
-  font-family: "Open Sans", sans-serif; }
+.hero {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(190, 190, 190, 0.15)), to(rgba(190, 186, 186, 0.3))), url("/assets/img/images/header.jpg");
+  background-image: -webkit-linear-gradient(rgba(190, 190, 190, 0.15), rgba(190, 186, 186, 0.3)), url("/assets/img/images/header.jpg");
+  background-image: -o-linear-gradient(rgba(190, 190, 190, 0.15), rgba(190, 186, 186, 0.3)), url("/assets/img/images/header.jpg");
+  background-image: linear-gradient(rgba(190, 190, 190, 0.15), rgba(190, 186, 186, 0.3)), url("/assets/img/images/header.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  position: relative; }
 
-.header-text {
+.hero-text {
   color: #ffffff;
-  font-family: "Open Sans", sans-serif;
-  font-size: 3.4rem;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-  text-align: center; }
+  left: 50%;
+  position: absolute;
+  text-align: center;
+  text-shadow: 2px 2px 8px #444444;
+  top: 35%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+  .hero-text h1 {
+    font-size: 7rem; }
 
 /*  
 	///////////////////////
@@ -472,6 +477,8 @@ footer {
     line-height: 1; }
   .container-fluid {
     width: 100%; }
+  .hero h1 {
+    font-size: 2.5rem !important; }
   .navbar-custom .navbar-brand {
     font-size: 1.6rem !important; }
   .navbar-custom .navbar-nav .nav-link {
@@ -484,6 +491,8 @@ footer {
     font-size: 1.6rem; }
   li {
     font-size: 1.6rem; }
+  .hero h1 {
+    font-size: 4rem !important; }
   .navbar-custom .navbar-brand {
     font-size: 1.8rem; }
   .tours p {
@@ -496,9 +505,11 @@ footer {
     max-width: 90vw; }
   hr {
     margin: 5rem 0; }
-  .marketing-text {
-    padding-left: 2rem;
-    padding-right: 2rem; }
+  .hero h1 {
+    font-size: 5rem; }
+  .navbar-collapse {
+    background-color: #ffffff;
+    color: #444444 !important; }
   .short-icon {
     font-size: 7.5rem; } }
 
@@ -519,10 +530,4 @@ footer {
     font-size: 80px;
     padding-top: 10rem; }
   .navbar-custom {
-    padding: 3rem; }
-  .nav-tours {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
-    .nav-tours .nav-item {
-      margin: 0 1rem; } }
+    padding: 2.5rem; } }

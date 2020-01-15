@@ -19,8 +19,14 @@ $(document).on("click", ".navbar-collapse.in", function (e) {
 $(window).scroll(function () {
 	if ($(document).scrollTop() > 50) {
 		$("nav").addClass("shrink");
+		$(".navbar-brand").css({"color": "#444444"});
+		$(".icon-bar").css({"background-color": "#444444"});
+		
 	} else {
 		$("nav").removeClass("shrink");
+		$(".navbar-brand").css({"color": "white"});
+		$(".icon-bar").css({"background-color": "white"});
+		$("..nav-link").css({"color": "white !important"});
 	}
 });
 
@@ -49,14 +55,6 @@ $(document).ready(function () {
 		}
 	});
 });
-
-$(window).on('resize', function() {
-    if($(window).width() > 991) {
-        $('#tours-nav').removeClass('flex-column');
-    }else{
-        $('#tours-nav').addClass('flex-column');
-    }
-})
 
 
 // animations

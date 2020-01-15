@@ -29,6 +29,14 @@
 
 	// header
 
+	.hero
+	{
+		h1
+		{
+			font-size: 2.5rem !important;
+		}
+	}
+
 	// nav
 
 	.navbar-custom
@@ -82,6 +90,14 @@
 
 	// header
 
+	.hero
+	{
+		h1
+		{
+			font-size: 4rem !important;
+		}
+	}
+
 	// nav
 
 	.navbar-custom
@@ -131,17 +147,25 @@
 
 	// header
 
+	.hero
+	{
+		h1
+		{
+			font-size: 5rem;
+		}
+	}
+
 	// nav
+
+	.navbar-collapse
+	{
+		background-color: $white;
+		color: $black !important;
+	}
 
 	// buttons
 
 	// components
-
-	.marketing-text 
-	{
-		padding-left: 2rem;
-		padding-right: 2rem;
-	}
 
 	.short-icon 
 	{
@@ -258,16 +282,7 @@
 
 	.navbar-custom 
 	{
-		padding: 3rem;
-	}
-
-
-	.nav-tours 
-	{
-		display: flex;
-		.nav-item {
-			margin: 0 1rem;
-		}
+		padding: 2.5rem;
 	}
 
 	// buttons

@@ -6,20 +6,28 @@
 	///////////////////////
 */
 
-.header-subtext 
+.hero
 {
-	padding-bottom: 4rem;
-	color: $white;
-	font-family: $f-secondary;
+	background-image: linear-gradient(rgba(190, 190, 190, 0.15), rgba(190, 186, 186, 0.3)), url('/assets/img/images/header.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 100%;
+	position: relative;
 }
 
-.header-text 
+.hero-text
 {
 	color: $white;
-	font-family: $f-secondary;
-	font-size: $font-xl;
-	padding-top: 5rem;
-	padding-bottom: 5rem;
+	left: 50%;
+	position: absolute;
 	text-align: center;
-}
+	text-shadow: 2px 2px 8px $black;
+	top: 35%;
+	transform: translate(-50%, -50%);
 
+	h1
+	{
+		font-size: 7rem;
+	}
+}
