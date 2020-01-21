@@ -19,14 +19,8 @@ $(document).on("click", ".navbar-collapse.in", function (e) {
 $(window).scroll(function () {
 	if ($(document).scrollTop() > 50) {
 		$("nav").addClass("shrink");
-		$(".navbar-brand").css({"color": "#444444"});
-		$(".icon-bar").css({"background-color": "#444444"});
-		
 	} else {
 		$("nav").removeClass("shrink");
-		$(".navbar-brand").css({"color": "white"});
-		$(".icon-bar").css({"background-color": "white"});
-		$("..nav-link").css({"color": "white !important"});
 	}
 });
 
@@ -53,31 +47,6 @@ $(document).ready(function () {
 				}
 			);
 		}
-	});
-});
-
-
-// animations
-
-// scroll to top function
-
-$(document).ready(function () {
-	$(window).scroll(function () {
-		if ($(this).scrollTop() > 100) {
-			$(".scrollToTop").fadeIn();
-		} else {
-			$(".scrollToTop").fadeOut();
-		}
-	});
-
-	$(".scrollToTop").click(function () {
-		$("html, body").animate({ scrollTop: 0 },
-			{
-				duration: 900,
-				easing: "easeOutExpo",
-				queue: false
-			});
-		return false;
 	});
 });
 

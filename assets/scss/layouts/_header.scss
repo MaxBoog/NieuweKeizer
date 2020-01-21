@@ -26,8 +26,12 @@
 	top: 35%;
 	transform: translate(-50%, -50%);
 
-	h1
+	.hero-title
 	{
-		font-size: 7rem;
+		font-size: 10rem;
+	}
+
+	.hero-subtitle {
+		font-size: 4rem;
 	}
 }

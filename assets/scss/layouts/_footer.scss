@@ -8,27 +8,33 @@
 
 
 footer 
-{
-	height: 100%;
-	margin-top: 2.5rem;
-	padding: 3rem;
-
+{	
+	padding-top: 3rem;
+	background-color: $light-grey;
 	a 
 	{
-		color: $white;
+		color: $black;
 
 		&:hover {
-			color: $red;
+			color: $dark-grey;
 		}
 	}
 	
 	hr 
 	{
-		border-color: $white;
+		border-color: $black;
+		margin: 20px 0;
 	}
 	
 	p
 	{
-		color: $white;
+		color: $black;
+	}
+
+	.left-footer {
+		padding: 5rem;
+	}
+	.right-footer {
+		padding: 5rem;
 	}
 }

@@ -18,7 +18,7 @@
     <meta name="msapplication-config" content="assets/img/favicons/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
 
-    <script src="https://kit.fontawesome.com/183c3c7f20.js" crossorigin="anonymous" integrity="sha384-TDhFdBCp6zkFoOxFg2XaOsN4rWmrP4Tbzzaz0VKFgnk4mENBCgpW6mG7kamM0Yvy"></script>
+    <script src="https://kit.fontawesome.com/183c3c7f20.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
@@ -34,11 +34,18 @@
         </p>
     <![endif]-->
 
-    <!-- body -->
+    <!-- spinner -->
+    <!-- <script>
+        document.querySelector("body").style.display = "none";
+        document.querySelector("html").classList.add("spinner-2");
 
-    <!-- <button class="btn scrollToTop">
-        <i class="fas fa-angle-up fa-2x"></i>
-    </button> -->
+        setTimeout(function () {
+            document.querySelector("html").classList.remove("spinner-3");
+            document.querySelector("body").style.display = "block";
+        }, 1000);
+    </script> -->
+
+    <!-- body -->
 
     <!-- navigation -->
 
@@ -63,16 +70,16 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class='nav-link pr-md-4 pl-sm-4' href='#huren'>huren</a>
+                            <a class='nav-link pr-md-4 pl-sm-4' href='verhuren.html'>voor verhuurders</a>
                         </li>
                         <li class="nav-item">
-                            <a class='nav-link pr-md-4 pl-sm-4' href='#verhuren'>verhuren</a>
+                            <a class='nav-link pr-md-4 pl-sm-4' href='huren.html'>voor huurders</a>
                         </li>
-                        <!-- <li class="nav-item">
+                        <li class="nav-item">
                             <a class='nav-link pr-md-4 pl-sm-4' href='contact.html'>contact</a>
-                        </li> -->
+                        </li>
                         <li class="nav-item btn-lang">
-                            <a class='nav-link pr-md-4 pl-sm-4' href='/en/index.html'>EN</a>
+                            <a class='nav-link pr-md-4 pl-sm-4' href='/en/index.html'>EN <i class="fas fa-language"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -82,39 +89,83 @@
     
         <div class="hero">
             <div class="hero-text">
-                <h1>Nieuwe Keizer</h1>
-                <h2>Vastgoed Beheer</h2>
+                <h1 class="hero-title">Nieuwe Keizer</h1>
+                <h2 class="hero-subtitle">Vastgoed Beheer</h2>
                 <h2>Nieuwe Keizer is binnenkort online</h2>
-                
-                <!-- <a href="#down"><i class="fas fa-chevron-down fa-2x"></i></a> -->
             </div>
         </div>
 
-        <!-- <section class="container">
+        <section class="container">
             <div class="row">
-                <div class="col-sm-12">
-                    <h1>Huren</h1>
+                <div class="col-sm-12 pt-5">
+                    <hr>
+                    <h1 class="pb-5">Over Ons</h1>
                 </div>
             </div>
-
             <div class="row">
-                <div class="col-sm-12">
-                    <h1>Verhuren</h1>
+                <div class="col-sm-6"><p class="pb-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa fugit assumenda rem expedita officiis aperiam atque ducimus enim quidem minima quaerat quod, minus dolor ullam! Reiciendis, ut fuga perferendis temporibus ullam ducimus amet, corrupti adipisci numquam eius veniam iste in laudantium perspiciatis, odit repellendus optio quasi rerum recusandae magni quis?</p></div>
+                <div class="col-sm-6">
+                    <img src="assets/img/images/NK_001.jpg" alt="Nieuwe Keizer" class="img-fluid">
                 </div>
             </div>
-        </section> -->
+            <hr>
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1 class="pb-5">Nog een leuke titel</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <img src="assets/img/images/NK_002.jpg" alt="Nieuwe keizer" class="img-fluid">
+                </div>
+                <div class="col-sm-6">
+                   <p class="pt-5 pt-sm-0"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque aliquid magnam beatae cupiditate odit, similique laudantium sit tempora libero earum quasi, deleniti illo voluptate dolor itaque. Ea fugit eaque praesentium, ullam nihil porro, quibusdam nostrum, iure voluptatibus blanditiis voluptatum totam? Voluptate quo nulla iure at libero ipsam facere quisquam similique!</p>
+                </div>
+            </div>
+            <hr>
+        </section>
 
-        <!-- <footer class="container">
+        <footer class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="text-center">&copy; Copyright | <a href="https://nieuwekeizer.nl">nieuwekeizer.nl</a></p>
+                    
+                </div>
+                <div class="col-md-6 left-footer">
+                    <hr>
+                    <p>
+                        <a href="index.html">Home</a>
+                    </p>
+                    <p>
+                        <a href="verhuren.html">Voor Verhuurders</a>
+                    </p>
+                    <p>
+                        <a href="huren.html">Voor Huurders</a>
+                    </p>
+                    <p>
+                        <a href="contact.html">Contact</a>
+                    </p>
+                </div>
+                <div class="col-md-6 right-footer">
+                    <hr>
+                    <p>
+                        <a href="mailto:info@nk-vastgoedbeheer.nl">e-mail <i class="far fa-envelope"></i></a>
+                    </p>
+                    <p>
+                        <a href="assets/docs/disclaimer.pdf" target="_blank">Disclaimer</a>
+                    </p>
+                    <p>
+                        <a href="privacy-verklaring.pdf" target="_blank">Privacy Verklaring</a>
+                    </p>
+                </div>
+            </div>
+        </footer>
 
-        </footer> -->
-    
-
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="assets/js/jquery-easing.min.js"></script>
-	<script src="assets/js/scrollreveal.min.js"></script>
-	<script src="assets/js/scripts.min.js"></script>
-</body>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="assets/js/jquery-easing.min.js"></script>
+        <script src="assets/js/scrollreveal.min.js"></script>
+        <script src="assets/js/scripts.min.js"></script>
+    </body>
 </html>
