@@ -6,60 +6,120 @@
 	//////////////////////////
 */
 
-.featurette 
+// block icon section
+
+.section-relative
 {
-    h2 
-    {
-        font-size: $font-xl;
-        padding-bottom: 1rem;
-    }
+    position: relative;
+    z-index: 1;
 }
 
-.marketing 
+.block-icon-modern-items
 {
-    .marketing-element 
+    display: flex;
+    flex-direction: column;
+
+    .block-icon-modern
     {
+        padding: 40px 35px;
         text-align: center;
-        
-        h2 
-        { 
-            font-size: $font-l;
+        transition: ease-in-out .3s;
+        margin-left: 1px;
+        margin-right: 1px;
+
+        svg
+        {
+            color: $light-grey !important;
         }
 
-        p 
+        .block-icon-caption
         {
-            font-size: $font-m !important;
-			margin-right: 0.75rem;
-			margin-left: 0.75rem;
-		}
-	}
-	
-    
+            max-width: 450px;
+            margin-left: auto;
+            margin-right: auto;
+
+            .block-icon-title
+            {
+                p
+                {
+                    color: $light-grey !important;
+                    font-family: $f-secondary;
+                    font-size: $font-l !important;
+                    font-weight: 600;
+                }
+            }
+
+            .block-icon-text
+            {
+                p
+                {
+                    color: $grey !important;
+                    font-size: $font-xs;
+                }
+            }
+        }
+    }
+
+    .block-icon-primary
+    {
+        background-color: $light-brown;
+        border-color: $light-brown;
+    }
+
+    .block-icon-secondary
+    {
+        background-color: $dark-grey;
+        border-color: $dark-grey;
+    }
+
+    .block-icon-tertiary
+    {
+        background-color: $dark-grey-2;
+        border-color: $dark-grey-2;
+    }
+}
+.block-icon-modern * + .block-icon-caption {
+    margin-top: 20px;
 }
 
-.tours
+// section title
+
+.section-title
 {
-    h1
-    {
-        padding-top: 5rem;
-    }
+    position: relative;
+    padding-top: 40px;
 
-    hr
+    h2
     {
-        margin: 5rem 0 0 0;
+        text-transform: capitalize !important;
+        font-size: 38px;
     }
+    
+    span
+    {
+        font-style: italic;
+        color: $light-brown;
+        font-weight: 700 !important;
+        
+    }
+}
 
-    .hr-2
-    {
-        max-width: 10rem;
-        margin: 3rem 0;
-    }
+.section-title::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70px;
+    height: 2px;
+    background: #686157;
+}
 
-    strong
-    {
-        font-weight: 900 !important;
-        color: black;
-    }
+.section-title.section-title-left::before {
+
+    left: 0;
+    transform: translateX(0);
+
 }
 
 

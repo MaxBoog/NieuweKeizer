@@ -27,15 +27,7 @@ nav.shrink
 
 	.navbar-brand 
 	{
-		color: $black;
-		font-family: $f-primary;
-		font-size: $font-l;
-		transition: 0.2s;
-
-		&:hover 
-		{
-			color: $dark-grey;
-		}
+		max-width: 50px;
 	}
 	
 	.nav-item.active .nav-link 

@@ -13,11 +13,16 @@ footer
 	background-color: $light-grey;
 	a 
 	{
-		color: $black;
+		color: $dark-grey;
 
 		&:hover {
-			color: $dark-grey;
+			color: $grey;
 		}
+	}
+
+	h2
+	{
+		font-size: $font-l;
 	}
 	
 	hr 
@@ -28,13 +33,25 @@ footer
 	
 	p
 	{
-		color: $black;
+		font-size: $font-s !important;
+		color: $dark-grey;
+	}
+	
+	.small
+	{
+		font-size: 1rem !important;
 	}
 
 	.left-footer {
-		padding: 5rem;
+		padding: 3rem 5rem;
 	}
+
+	.middle-footer
+	{
+		padding: 3rem 5rem;
+	}
+
 	.right-footer {
-		padding: 5rem;
+		padding: 3rem 5rem;
 	}
 }

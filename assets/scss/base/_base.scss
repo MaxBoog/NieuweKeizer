@@ -20,7 +20,6 @@ body
 	// background-image: linear-gradient(to bottom left, $blue, $dark-purple);
 	color: $black;
 	font-family: $f-primary !important;
-	font-weight: 300 !important;
 	height: 100%;
 	letter-spacing: 1px;
 	line-height: 1.5;
@@ -33,16 +32,21 @@ body
 a 
 {
 	text-decoration: none;
-	color: $blue;
 	&:hover {
 		text-decoration: none;
-		color: $red;
 	}
 }
 
 h1,h2,h3,h4,h5
 {
 	line-height: 1.5;
+	font-family: $f-secondary;
+	font-weight: 600;
+}
+
+h1
+{
+	font-size: $font-xl;
 }
 
 hr 
@@ -54,12 +58,15 @@ hr
 
 .hr-2
 {
-	background-image: linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
-	border-color: transparent;
-	border-radius: 2px;
-	height: 2px;
+	border: 1px solid $light-brown;
 	margin: 2rem 0;
+	margin: 2rem 10rem;
 	
+}
+.hr-3
+{
+	@extend hr;
+	margin: 30px 100px !important;
 }
 
 li
@@ -70,7 +77,7 @@ li
 p 
 {
 	color: $dark-grey;
-	font-size: $font-m;
+	font-size: $font-s;
 }
 
 // loading spinners
@@ -80,7 +87,7 @@ p
 	animation: spinner 0.7s ease infinite;
 	border-radius: 50%;
 	border: 3px solid $grey;
-	border-top-color: $red;
+	border-top-color: $black;
 	box-sizing: border-box;
 	height: 6rem;
 	left: 50%;
@@ -112,7 +119,7 @@ p
 	content: "";
 	animation: spinner 0.7s linear infinite;
 	border-radius: 50%;
-	border-top: 3px solid $red;
+	border-top: 3px solid $black;
 	border-right: 3px solid transparent;
 	box-sizing: border-box;
 	height: 6rem;

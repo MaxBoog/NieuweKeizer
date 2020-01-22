@@ -9,30 +9,28 @@
 
 // imports 
 
-@import url('https://fonts.googleapis.com/css?family=Lato|Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato|Open+Sans|Cormorant+Garamond&display=swap');
 
-// colors standerd
+// colors standard
 
 $white: #ffffff;
 $light-grey: #ececec;
 $grey: #cfcfcf;
 $black: #000000;
-$dark-grey: #747474;
+$dark-grey: #3c3c3c;
+$dark-grey-2: #333333;
 
 // colors main
 
-$blue: #1c86a7;
-$light-blue: #b9e1dc;
+$light-brown: #686157;
 $brown: #773800;
-$red: #fa691b;
-$orange: #fd8544;
-$purple: #6c5e81;
-$dark-purple: #5f4d93;
+
 
 // fonts
 
 $f-primary: "Lato", sans-serif;
-$f-secondary: "Open Sans", sans-serif;
+$f-secondary: "Cormorant Garamond", serif;
+$f-tertiary: "Open Sans", sans-serif;
 
 // font sizes
 

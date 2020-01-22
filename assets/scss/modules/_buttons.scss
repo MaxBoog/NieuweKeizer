@@ -35,29 +35,28 @@
 
 // primary call to action button
 .btn-CTA-1 {
-	background-color: $red;
+	background-color: $light-brown;
 	border: 0;
-	border-radius: 8px;
+	border-radius: 30px;
 	box-shadow: none;
-	color: $white;
+	color: $light-grey;
 	cursor: pointer;
 	display: inline-block;
+	font-family: $f-secondary;
 	font-size: $font-s;
-	font-weight: 300;
-	min-width: 18rem !important;
-	margin: 2rem 0.5rem;
-	padding: 2rem 3rem;
+	font-weight: 1000 !important;
+	padding: 1.5rem;;
 
 	&:hover 
 	{
-		background-color: $orange;
-		color: white;
+		background-color: $dark-grey;
+		color: $white;
 	}
 
 	&:active 
 	{
-		background-color: $red !important;
-		border-color: $red !important;
+		background-color: $black !important;
+		border-color: $black !important;
 		box-shadow: none !important;
 		color: white !important;
 		outline: none !important;
@@ -65,8 +64,8 @@
 
 	&:focus 
 	{
-		background-color: $red !important;
-		border-color: $red !important;
+		background-color: $black !important;
+		border-color: $black !important;
 		box-shadow: none !important;
 		color: white !important;
 	}

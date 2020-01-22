@@ -31,9 +31,18 @@
 
 	.hero
 	{
-		h1
+		.hero-text
 		{
-			font-size: 2.5rem !important;
+			width: 90%;
+			.hero-title
+			{
+				font-size: 2.6rem !important;
+			}
+
+			.hero-subtitle
+			{
+				font-size: 2.1rem !important;
+			}
 		}
 	}
 
@@ -92,9 +101,14 @@
 
 	.hero
 	{
-		h1
+		.hero-title
 		{
 			font-size: 4rem !important;
+		}
+
+		.hero-subtitle
+		{
+			font-size: 3rem !important;
 		}
 	}
 
@@ -117,16 +131,6 @@
 	// images
 
 	// sections
-
-	.tours
-	{
-		p
-		{
-			border: 1px solid $light-grey;
-			border-radius: 5px;
-			padding: 1rem;
-		}
-	}
 }
 
 @media (max-width: 992px)
@@ -142,6 +146,8 @@
 	{
 		margin: 5rem 0;
 	}
+
+	
 
 	// footer
 
@@ -160,23 +166,27 @@
 	.navbar-collapse
 	{
 		background-color: $white;
-		color: $black !important;
 	}
 
 	// buttons
 
 	// components
 
-	.short-icon 
-	{
-		font-size: 7.5rem;
-	}
 
 	// forms
 
 	// images
 
 	// sections
+
+	.block-icon-modern-items
+	{
+		.block-icon-modern
+		{
+			margin-top: 1px;
+			margin-bottom: 1px;
+		}
+	}
 
 }
 
@@ -189,14 +199,6 @@
 	// nav
 
 	// buttons
-
-	.btn-CTA-1
-	{
-		font-size: 1.4rem;
-		margin-top: 1rem;
-		min-width: 13rem;
-		padding: 1.5rem;
-	}
 
 	// components
 
@@ -261,6 +263,12 @@
 	{
 		padding: 5rem;
 	}	
+
+	.hr-3
+	{
+		display: none !important;
+		border: 0px solid black;
+	}
 	
 	// footer
 	
@@ -294,6 +302,15 @@
 	// images
 
 	// sections
+
+	.block-icon-modern-items
+	{
+		flex-direction: row;
+    	margin-left: -1px;
+    	margin-right: -1px;
+    	transform: translateY(-100px);
+    	margin-bottom: -100px;
+	}
 
 }
 
