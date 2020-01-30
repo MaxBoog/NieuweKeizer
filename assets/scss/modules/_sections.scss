@@ -19,65 +19,93 @@
     display: flex;
     flex-direction: column;
 
-    .block-icon-modern
+}
+
+.block-icon-modern
+{
+    padding: 40px 35px;
+    text-align: center;
+    transition: ease-in-out .3s;
+    margin-left: 1px;
+    margin-right: 1px;
+
+    svg
     {
-        padding: 40px 35px;
-        text-align: center;
-        transition: ease-in-out .3s;
-        margin-left: 1px;
-        margin-right: 1px;
+        color: $light-grey !important;
+    }
 
-        svg
+    .block-icon-caption
+    {
+        max-width: 450px;
+        margin-left: auto;
+        margin-right: auto;
+
+        .block-icon-title
         {
-            color: $light-grey !important;
-        }
-
-        .block-icon-caption
-        {
-            max-width: 450px;
-            margin-left: auto;
-            margin-right: auto;
-
-            .block-icon-title
+            p
             {
-                p
-                {
-                    color: $light-grey !important;
-                    font-family: $f-secondary;
-                    font-size: $font-l !important;
-                    font-weight: 600;
-                }
-            }
-
-            .block-icon-text
-            {
-                p
-                {
-                    color: $grey !important;
-                    font-size: $font-xs;
-                }
+                color: $light-grey !important;
+                font-family: $f-secondary;
+                font-size: $font-l !important;
+                font-weight: 600;
             }
         }
-    }
 
-    .block-icon-primary
-    {
-        background-color: $light-brown;
-        border-color: $light-brown;
-    }
-
-    .block-icon-secondary
-    {
-        background-color: $dark-grey;
-        border-color: $dark-grey;
-    }
-
-    .block-icon-tertiary
-    {
-        background-color: $dark-grey-2;
-        border-color: $dark-grey-2;
+        .block-icon-text
+        {
+            p
+            {
+                color: $grey !important;
+                font-size: $font-xs;
+            }
+        }
     }
 }
+
+.block-icon-primary
+{
+    background-color: $light-brown;
+    border-color: $light-brown;
+}
+
+.block-icon-secondary
+{
+    background-color: $dark-grey;
+    border-color: $dark-grey;
+}
+
+.block-icon-tertiary
+{
+    background-color: $dark-grey-2;
+    border-color: $dark-grey-2;
+}
+
+.block-icon-white
+{
+    background-color: $white;
+    border: 1px solid $grey;
+    
+    .block-icon-caption
+    {
+        .block-icon-title
+        {
+            p
+            {
+                color: $black !important;   
+            }
+        }
+
+        .block-icon-text
+        {
+            p
+            {
+                color: $light-brown !important;
+            }
+        }
+    }
+
+}
+
 .block-icon-modern * + .block-icon-caption {
     margin-top: 20px;
 }
@@ -121,5 +149,6 @@
     transform: translateX(0);
 
 }
+
 
 

@@ -48,12 +48,16 @@ h1
 {
 	font-size: $font-xl;
 }
+h2
+{
+	font-size: 3rem;
+}
 
 hr 
 {
 	border: 1px solid $light-grey;
 	border-radius: 90px;
-	margin: 7rem 0;
+	margin: 6rem 0;
 }
 
 .hr-2

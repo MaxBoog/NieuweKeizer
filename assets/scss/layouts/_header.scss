@@ -8,31 +8,58 @@
 
 .hero
 {
-	background-image: linear-gradient(rgba(190, 190, 190, 0.15), rgba(190, 186, 186, 0.3)), url('/assets/img/images/header.jpg');
+	background-image: linear-gradient(rgba(190, 190, 190, 0.4), rgba(190, 186, 186, 0.4)), url('/assets/img/images/header.jpg');
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
 	height: 100%;
 	position: relative;
-}
 
-.hero-text
-{
-	color: $white;
-	left: 50%;
-	position: absolute;
-	text-align: center;
-	text-shadow: 2px 2px 8px $black;
-	top: 35%;
-	transform: translate(-50%, -50%);
-	width: 70%;
-
-	.hero-title
+	.hero-logo
 	{
-		font-size: 8rem;
+		max-width: 100px;
 	}
-
-	.hero-subtitle {
-		font-size: 4rem;
+	
+	.hero-text
+	{
+		color: $white;
+		left: 50%;
+		position: absolute;
+		text-align: center;
+		text-shadow: 2px 2px 8px $black;
+		top: 35%;
+		transform: translate(-50%, -50%);
+		width: 70%;
+	
+		.hero-title
+		{
+			font-size: 7rem;
+		}
+	
+		.hero-subtitle {
+			font-size: 4rem;
+		}
 	}
 }
+
+.hero-2
+{
+	@extend .hero;
+	background-image: linear-gradient(rgba(51, 51, 51, 0.8)), url('/assets/img/images/header-2.jpg');
+	height: 40%;
+
+	.hero-text
+	{
+		@extend .hero-text;
+
+		left: 35%;
+		top: 55%;
+	}
+}
+
+.hero-3
+{
+	@extend .hero-2;
+	background-image: linear-gradient(rgba(51, 51, 51, 0.8)), url('/assets/img/images/header-3.jpg');
+}
+

@@ -6,15 +6,55 @@
 	///////////////////////////
 */
 
-.short-icon 
+.carousel-caption
 {
-	margin: 2.5rem 0;
-	color: $white;
-	font-size: 7rem;
+	background: linear-gradient(rgba(61, 61, 61, 0.15), rgba(110, 110, 110, 0.3));
+	text-align: left;
+	padding: 0.3rem;
+
+	h5
+	{
+		font-size: $font-m;
+	}
+
+	p
+	{
+		color: $white;
+		font-size: $font-xs;
+
+		.rented
+		{
+			background-color: $red;
+			color: $white;
+			padding: 0.65rem;
+			border-radius: 20px;
+		}
+
+		.for-rent
+		{
+			@extend .rented;
+			background-color: $green;
+		}
+	}
 }
 
-.tours-heading 
+.accordion
 {
-	font-size: $font-xl;
-	color: $dark-grey;
+	.card
+	{
+		border-radius: 0px;
+		.card-header
+		{
+			button
+			{
+				font-family: $f-primary;
+				color: $light-brown;
+			}
+		}
+
+		.card-body
+		{
+			font-size: 1.5rem;
+		}
+	}
 }
