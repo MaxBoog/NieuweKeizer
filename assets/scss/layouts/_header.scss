@@ -45,21 +45,21 @@
 .hero-2
 {
 	@extend .hero;
-	background-image: linear-gradient(rgba(51, 51, 51, 0.8)), url('/assets/img/images/header-2.jpg');
-	height: 40%;
+	background-image: linear-gradient(rgba(190, 190, 190, 0.4), rgba(190, 186, 186, 0.4)), url('/assets/img/images/header-2.jpg');
+	height: 50%;
 
 	.hero-text
 	{
 		@extend .hero-text;
 
-		left: 35%;
-		top: 55%;
+		left: 50%;
+		top: 50%;
 	}
 }
 
 .hero-3
 {
 	@extend .hero-2;
-	background-image: linear-gradient(rgba(51, 51, 51, 0.8)), url('/assets/img/images/header-3.jpg');
+	background-image: linear-gradient(rgba(190, 190, 190, 0.4), rgba(190, 186, 186, 0.4)), url('/assets/img/images/header-4,3.jpg');
 }
 

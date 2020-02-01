@@ -85,92 +85,87 @@
             </div>
         </nav>
 
-        <div class="hero-2">
+        <!-- <div class="hero-2">
             <div class="hero-text">
                 <img class="img-fluid justtify-content-center hero-logo pt-5 mt-5" src="assets/img/images/NK-Logo-2.png" alt="NK">
-                <h1 class="hero-title" style="font-size: 6rem">Voor verhuurders</h1>
+                <h1 class="hero-title" style="font-size: 6rem">Contact</h1>
             </div>
-        </div>
+        </div> -->
 
-        <section class="container">
-            <hr>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="block-icon-modern block-icon-white">
-                        <div class="block-icon-caption">
-                            <div class="block-icon-title">
-                                <p>
-                                    Geen zorgen
-                                </p>
-                            </div>
-                            <div class="block-icon-text">
-                                <p>
-                                    Geen zorgen over mutaties en het innen van huren.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="block-icon-modern block-icon-white">
-                        <div class="block-icon-caption">
-                            <div class="block-icon-title">
-                                <p>
-                                    Onderhoud
-                                </p>
-                            </div>
-                            <div class="block-icon-text">
-                                <p>
-                                    NK-vastgoedbeheer neemt onderhoud uit handen met eigen onderhoudsdienst.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="block-icon-modern block-icon-white">
-                        <div class="block-icon-caption">
-                            <div class="block-icon-title">
-                                <p>
-                                    Fiscale eisen
-                                </p>
-                            </div>
-                            <div class="block-icon-text">
-                                <p>
-                                    Voldoen aan fiscale eisen van inactief beheer 
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="hr-2"></div>
+        <section class="container" style="padding-top: 100px;">
             <div class="row">
                 <div class="col-sm-12 text-center">
-                    <a href="contact.html" class="btn btn-lg btn-CTA-1 mt-3">Neem contact op</a>
+                    <h1 class="mt-5">Contactgegevens</h1>
+                    <hr>
+                    <p><img src="assets/img/images/NK-Logo.png" style="max-width: 50px" alt="NK"></p>
+                    <p class="pb-3">Nieuwe Keizer Vastgoedbeheer</p>
+                    <p>Nieuwe Keizersgracht 48 G</p>
+                    <p>1018  DS  Amsterdam</p>
+                    <p>Tel: <a href="tel:+31612345678"></a>+31 6 12345678</p>
+                    <p><a href="mailto:NKvastgoedbeheer@gmail.com" style="color: black">NKvastgoedbeheer@gmail.com</a></p>
                 </div>
             </div>
-            <hr>
-            <div class="row">
-                <div class="col-md-6 col-lg-4">
-                    <div class="section-title section-title-left">
-                        <h2><span>nieuwe keizer</span> vastgoedbeheer</h2>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-8">
-                   <p class="pt-5 pt-sm-0"> 
-                       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque aliquid magnam beatae cupiditate odit, similique laudantium sit tempora libero earum quasi, deleniti illo voluptate dolor itaque.
-                    </p> 
-                    <p>
-                        Ea fugit eaque praesentium, ullam nihil porro, quibusdam nostrum, iure voluptatibus blanditiis voluptatum totam?
-                    </p>
-                    <p>
-                        Voluptate quo nulla iure at libero ipsam facere quisquam similique!
-                    </p>
-                </div>
-            </div>
-            <hr>
-        </section>
+			<div class="row">
+                <h1 class="mx-auto mt-5 section-title">Stuur een mail</h1>
+				<div class="col-md-12">
+                    <hr>
+					<form id="contact-form" name="contact-form-nieuwekeizer" method="POST" data-netlify="true" data-netlify-recaptcha="true">
+                        <div class="controls">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input id="form_name" type="text" name="name" class="form-control" placeholder="Voornaam *" required="required" data-error="required">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+
+                                        <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Achternaam *" required="required"
+                                            data-error="required">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+
+                                        <input id="form_email" type="email" name="email" class="form-control" placeholder="E-mail *" required="required" data-error="required">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+
+                                        <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="telefoonnummer">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+
+                                        <textarea id="form_message" name="message" class="form-control" placeholder="Bericht *" rows="4" required="required"
+                                            data-error="please enter a message"></textarea>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+								<div class="col-md-12">
+									<div class="form-group">
+										<div data-netlify-recaptcha="true"></div>
+									</div>
+								</div>
+                                <div class="col-md-12">
+                                    <button type="submit" class="btn btn-send mb-5">Stuur Bericht</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+				</div>
+			</div>
+		</section>
 
         <footer class="container-fluid">
             <div class="row">

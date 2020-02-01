@@ -510,20 +510,20 @@ nav.shrink {
       font-size: 4rem; }
 
 .hero-2, .hero-3 {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(51, 51, 51, 0.8))), url("/assets/img/images/header-2.jpg");
-  background-image: -webkit-linear-gradient(rgba(51, 51, 51, 0.8)), url("/assets/img/images/header-2.jpg");
-  background-image: -o-linear-gradient(rgba(51, 51, 51, 0.8)), url("/assets/img/images/header-2.jpg");
-  background-image: linear-gradient(rgba(51, 51, 51, 0.8)), url("/assets/img/images/header-2.jpg");
-  height: 40%; }
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(190, 190, 190, 0.4)), to(rgba(190, 186, 186, 0.4))), url("/assets/img/images/header-2.jpg");
+  background-image: -webkit-linear-gradient(rgba(190, 190, 190, 0.4), rgba(190, 186, 186, 0.4)), url("/assets/img/images/header-2.jpg");
+  background-image: -o-linear-gradient(rgba(190, 190, 190, 0.4), rgba(190, 186, 186, 0.4)), url("/assets/img/images/header-2.jpg");
+  background-image: linear-gradient(rgba(190, 190, 190, 0.4), rgba(190, 186, 186, 0.4)), url("/assets/img/images/header-2.jpg");
+  height: 50%; }
   .hero-2 .hero-text, .hero-3 .hero-text {
-    left: 35%;
-    top: 55%; }
+    left: 50%;
+    top: 50%; }
 
 .hero-3 {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(51, 51, 51, 0.8))), url("/assets/img/images/header-3.jpg");
-  background-image: -webkit-linear-gradient(rgba(51, 51, 51, 0.8)), url("/assets/img/images/header-3.jpg");
-  background-image: -o-linear-gradient(rgba(51, 51, 51, 0.8)), url("/assets/img/images/header-3.jpg");
-  background-image: linear-gradient(rgba(51, 51, 51, 0.8)), url("/assets/img/images/header-3.jpg"); }
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(190, 190, 190, 0.4)), to(rgba(190, 186, 186, 0.4))), url("/assets/img/images/header-4,3.jpg");
+  background-image: -webkit-linear-gradient(rgba(190, 190, 190, 0.4), rgba(190, 186, 186, 0.4)), url("/assets/img/images/header-4,3.jpg");
+  background-image: -o-linear-gradient(rgba(190, 190, 190, 0.4), rgba(190, 186, 186, 0.4)), url("/assets/img/images/header-4,3.jpg");
+  background-image: linear-gradient(rgba(190, 190, 190, 0.4), rgba(190, 186, 186, 0.4)), url("/assets/img/images/header-4,3.jpg"); }
 
 /*  
 	///////////////////////
@@ -566,8 +566,6 @@ footer {
 @media (max-width: 576px) {
   h1, h2, h3, h4, h5 {
     line-height: 1; }
-  .container-fluid {
-    width: 100%; }
   .hero .hero-text, .hero-2 .hero-text, .hero-3 .hero-text {
     width: 90%; }
     .hero .hero-text .hero-title, .hero-2 .hero-text .hero-title, .hero-3 .hero-text .hero-title {
@@ -575,12 +573,9 @@ footer {
     .hero .hero-text .hero-subtitle, .hero-2 .hero-text .hero-subtitle, .hero-3 .hero-text .hero-subtitle {
       font-size: 2.1rem !important; }
   .hero-2, .hero-3 {
-    height: 40%; }
-    .hero-2 .hero-text, .hero-3 .hero-text {
-      top: 65% !important;
-      left: 40% !important; }
-      .hero-2 .hero-text .hero-title, .hero-3 .hero-text .hero-title {
-        font-size: 3rem !important; }
+    height: 50%; }
+    .hero-2 .hero-text .hero-title, .hero-3 .hero-text .hero-title {
+      font-size: 3rem !important; }
   .navbar-custom .navbar-brand {
     font-size: 1.6rem !important; }
   .navbar-custom .navbar-nav .nav-link {
@@ -621,12 +616,9 @@ footer {
   .hero .hero-logo, .hero-2 .hero-logo, .hero-3 .hero-logo {
     padding-bottom: 2rem; }
   .hero-2, .hero-3 {
-    height: 40%; }
-    .hero-2 .hero-text, .hero-3 .hero-text {
-      top: 65% !important;
-      left: 40% !important; }
-      .hero-2 .hero-text .hero-title, .hero-3 .hero-text .hero-title {
-        font-size: 4rem; }
+    height: 50%; }
+    .hero-2 .hero-text .hero-title, .hero-3 .hero-text .hero-title {
+      font-size: 4rem; }
   .navbar-collapse {
     background-color: #ffffff; }
   .carousel-caption h5 {
