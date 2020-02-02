@@ -49,10 +49,3 @@ $(document).ready(function () {
 		}
 	});
 });
-
-
-// scrollreveal
-
-window.sr = ScrollReveal();
-sr.reveal(".foo");
-

@@ -45,10 +45,28 @@
 		border-radius: 0px;
 		.card-header
 		{
-			button
+			.btn-link
 			{
-				font-family: $f-primary;
 				color: $light-brown;
+				font-family: $f-primary;
+				width: 100%;
+    			position: relative;
+    			text-align: left;
+				
+				&:hover
+				{
+					text-decoration: none !important;
+				}
+
+				&:active
+				{
+					text-decoration: none !important;
+				}
+
+				&:focus
+				{
+					text-decoration: none !important;
+				}
 			}
 		}
 
@@ -57,4 +75,19 @@
 			font-size: 1.5rem;
 		}
 	}
+}
+
+.btn-link::before {
+    content: '\f107';
+    position: absolute;
+    top: 50%;
+    right: 0.8rem;
+    transform: translateY(-50%);
+    display: block;
+    font-family: 'FontAwesome';
+    font-size: 2.3rem;
+}
+
+.btn-link[aria-expanded='true']::before {
+    content: '\f106';
 }

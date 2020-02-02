@@ -333,11 +333,35 @@ strong {
 
 .accordion .card {
   border-radius: 0px; }
-  .accordion .card .card-header button {
+  .accordion .card .card-header .btn-link {
+    color: #686157;
     font-family: "Lato", sans-serif;
-    color: #686157; }
+    width: 100%;
+    position: relative;
+    text-align: left; }
+    .accordion .card .card-header .btn-link:hover {
+      text-decoration: none !important; }
+    .accordion .card .card-header .btn-link:active {
+      text-decoration: none !important; }
+    .accordion .card .card-header .btn-link:focus {
+      text-decoration: none !important; }
   .accordion .card .card-body {
     font-size: 1.5rem; }
+
+.btn-link::before {
+  content: '\f107';
+  position: absolute;
+  top: 50%;
+  right: 0.8rem;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  display: block;
+  font-family: 'FontAwesome';
+  font-size: 2.3rem; }
+
+.btn-link[aria-expanded='true']::before {
+  content: '\f106'; }
 
 /*  
 	///////////////////////
@@ -412,7 +436,7 @@ nav.shrink {
   .navbar-custom .nav-item.active .nav-link {
     color: #000000; }
   .navbar-custom .nav-item:hover .nav-link {
-    color: #3c3c3c; }
+    color: #686157; }
   .navbar-custom .navbar-nav .nav-link {
     color: #000000;
     font-size: 1.8rem;
